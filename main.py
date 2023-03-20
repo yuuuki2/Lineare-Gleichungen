@@ -22,15 +22,11 @@ def wertemenge(a,b,d_menge):
 
     return w_menge
 
-
-
-
-
 def main():
     d_menge = definitionsmenge()
     w_menge = wertemenge(a,b,d_menge)
 
-    print(w_menge)
+    print(f'Wertemenge: {w_menge}')
     
     plt.plot(d_menge,w_menge)
     plt.xlabel("Definitionsmenge")

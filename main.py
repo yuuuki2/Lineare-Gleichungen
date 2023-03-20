@@ -1,13 +1,30 @@
 import matplotlib.pyplot as plt
+import numpy as np
 
-d_wete_liste = []
-w_werte_liste = []
+funktion = input("Geben Sie eine Funktion (y = a * x + b) ein: ")
 
-d_werte = int(input("Geben Sie die Definitionswere an: "))
-w_werte = int(input("Geben Sie die Wertemenge an: "))
+# Split the input string into separate variables
+y, rest = funktion.split(" = ")
+a, rest = rest.split(" * ")
+x, b = rest.split(" + ")
 
-d_wete_liste.append(d_werte)
-w_werte_liste.append(w_werte)
+def y(a,x,b):
+    new_y = a * x + b
+
+    return new_y
+
+def definitionsmenge():
+    d_menge = np.linspace(-10,10,num=20)
+
+    return d_menge
 
 
+
+
+
+
+
+
+def main():
+    pass
 
